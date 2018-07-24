@@ -19,6 +19,8 @@ appinsights = AppInsights(app)
 # keep stdout/stderr logging using StreamHandler
 streamHandler = StreamHandler()
 app.logger.addHandler(streamHandler)
+
+# define log level to DEBUG
 app.logger.setLevel(logging.DEBUG)
 
 # apply format on all log handlers
